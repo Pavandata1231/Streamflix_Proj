@@ -28,7 +28,7 @@ jobs:
                   echo "Build and deploy completed successfully."
             - name: prepare EBS package
               run: |
-                  mkdir -p eb-package
+                  mkdir -p eb-deployment
                   cp target/*.jar eb-deployment/
                   echo "web: java -jar *.jar" > eb-deployment/Procfile
                   ls -la eb-deployment
